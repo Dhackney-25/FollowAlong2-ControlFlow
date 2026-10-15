@@ -1,5 +1,6 @@
 package part06;
 
+
 // Video: https://www.youtube.com/watch?v=xk4_1vDrzzo&t=4128s
 //        (this part's lesson starts here — GUIDE.md has it written out)
 
@@ -13,5 +14,12 @@ package part06;
 // You need the main method AND the import line. Type both yourself.
 
 public class Warmup {
+    public static void main(String[] args){
+
+        int roll = (int)(Math.random() * 6) + 1;
+        System.out.println("You rolled a " + roll);
+
+    }
+
 
 }
