@@ -16,15 +16,23 @@ package part06;
 
 public class IfStatements {
     public static void main(String[] args){
+        // Stores the age as 75
         int age = 75;
-
+        // Checks if the age is 75 or older
         if (age >= 75){
+            // Prints a message if the condition is true
             System.out.println("Okay boomer!");
+            // Checks if the age is 18 or older
         } else if(age >= 18) {
+            // Prints a message for adults
             System.out.println("You are an adult!");
+            // Checks if the age is 13 or older
         } else if(age >= 13){
+            // Prints a message for teenagers
             System.out.println("You are a teenager !");
+            // Runs if none of the previous conditions are true
         } else {
+            // Prints a message for anyone under 13
             System.out.println("Your are not an adult!");
         }
     }
