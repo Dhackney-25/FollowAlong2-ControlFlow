@@ -10,7 +10,7 @@ import org.junit.jupiter.api.Test;
 // You do not change this file. It checks your answers in Challenge.java.
 // Run it with the green arrow next to "class ChallengeTest".
 
-class ChallengeTest {
+class challengeTest {
 
     // ----- ticketPrice -----
 
