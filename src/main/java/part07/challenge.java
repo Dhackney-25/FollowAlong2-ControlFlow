@@ -14,16 +14,17 @@ package part07;
 public class challenge {
     public static boolean canPlay(boolean homeworkDone, boolean isWeekend, int hour) {
         return (homeworkDone || isWeekend) && hour >= 8 && hour < 21;
-        }
     }
+
     public static int digitCount(int n) {
-            int count = 0;
+        int count = 0;
 
-            do {
-                count++;
-                n = n / 10;
-            } while (n > 0);
+        do {
+            count++;
+            n = n / 10;
+        } while (n > 0);
 
-            return count;
-        }
+        return count;
+    }
+}
 
