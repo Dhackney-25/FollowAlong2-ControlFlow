@@ -12,30 +12,20 @@ package part06;
 // Your answer goes after the word return.
 
 public class Challenge {
-
-    // Problem 1 — canCharge
-    // A robot should start charging when it is docked AND its battery is below 100.
-    // Return true if it should charge, false if not.
-    //
-    //   canCharge(50, true)   → true    docked, battery not full
-    //   canCharge(100, true)  → false   docked, but already full
-    //   canCharge(20, false)  → false   not docked
-    //   canCharge(0, true)    → true
     public static boolean canCharge(int battery, boolean docked) {
-        return false;   // YOUR CODE — use an if statement
+        if (docked && battery < 100) {
+            return true;
+        } else {
+            return false;
+        }
     }
 
-    // Problem 2 — dayType
-    // Days are numbered 1 to 7. Days 1–5 are "weekday". Days 6 and 7 are "weekend".
-    // Any other number is "invalid".
-    //
-    //   dayType(1)  → "weekday"
-    //   dayType(5)  → "weekday"
-    //   dayType(6)  → "weekend"
-    //   dayType(7)  → "weekend"
-    //   dayType(0)  → "invalid"
-    //   dayType(9)  → "invalid"
+
     public static String dayType(int day) {
-        return "";   // YOUR CODE — use a switch
+        return switch (day) {
+            case 1, 2, 3, 4, 5 -> "weekday";
+            case 6, 7 -> "weekend";
+            default -> "invalid";
+        };
+        }
     }
-}
