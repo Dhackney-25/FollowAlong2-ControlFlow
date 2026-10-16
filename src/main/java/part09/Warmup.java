@@ -11,5 +11,11 @@ package part09;
 // You will need to type the main method yourself. That is the point.
 
 public class Warmup {
+    public static void main(String[] args){
+        for (int c = 5; c >= 1; c--) {
+            System.out.println(c);
+        }
+        System.out.println("Liftoff!");
+    }
 
 }
