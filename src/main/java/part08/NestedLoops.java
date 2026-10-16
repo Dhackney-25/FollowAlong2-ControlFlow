@@ -17,23 +17,33 @@ import java.util.Scanner;
 
 public class NestedLoops {
     public static void main(String[] args){
-
+        // Creates a Scanner to read user input
         Scanner scanner = new Scanner(System.in);
-
+        // Declares a variable to store the number of rows
         int rows;
+        // Declares a variable to store the number of columns
         int columns;
+        // Creates a String to store the symbol
         String symbol = "";
-
+        // Asks the user for the number of rows
         System.out.println("Enter number of rows: ");
-
+        // Reads the number of rows entered
         rows = scanner.nextInt();
+        // Asks the user for the number of columns
         System.out.println("Enter number of columns: ");
+        // Reads the number of columns entered
         columns = scanner.nextInt();
+        // Asks the user which symbol to print
         System.out.println("Enter symbol to use: ");
+        // Reads the symbol entered
         symbol = scanner.next();
+        // Loops through each row
         for (int i = 1; i <= rows; i++){
+            // Prints a blank line before each row
             System.out.println();
+            // Loops through each column
             for (int j =1; j <= columns; j++){
+                // Prints the symbol on a new line
                 System.out.println(symbol);
             }
         }

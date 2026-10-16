@@ -15,10 +15,13 @@ package part08;
 
 public class ForLoops {
     public static void main(String[] args){
+        // Starts at 10, counts down by 2, and stops at 0
         for(int i = 10; i >= 0; i++){
+            // Prints the current value of i
             System.out.println(i);
 
             i -= 2;
+            // Prints a New Year's message
         }System.out.println("Happy New Years!");
     }
 
